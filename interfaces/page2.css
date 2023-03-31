@@ -1,0 +1,125 @@
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  .logo img {
+    height: 40px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li.search-box {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li.search-box form {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li.search-box input[type="text"] {
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+  
+  }
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    float: left;
+    margin-right: 20px; /* ajustez la marge selon vos besoins */
+  }
+  
+  .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  
+  .product-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .product-list li {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-list li img {
+    max-width: 100%;
+  }
+  
+  .product-list li h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .product-list li p {
+    margin-top: 10px;
+  }
+  
+  .product-list li a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  h1 {
+    text-align: center;
+}
+
+.produit {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.produit img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produit h2 {
+    font-size: 1.5rem;
+}
+
+.produit p {
+    font-size: 1.2rem;
+}
