@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de Réparation</title>
+    <link rel="stylesheet" href="c.css">
+	<style>
+        
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		label {
+			font-size: 1.2rem;
+			margin-bottom: 10px;
+		}
+		input[type="submit"] {
+			padding: 10px 20px;
+			margin-top: 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.2rem;
+			cursor: pointer;
+		}
+		.listbox {
+			width: 200px;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+    <main>
+		<nav>
+        
+      <img src="images/Logo.png" style="width:150%; height:auto; max-width:85px;"/>
+            <ul>
+              <li><a href="accueil.html">Accueil </a></li>
+              <li><a href="page2.html">À propos</a></li>
+             <li><a href="produits.html" > produits</a></li>
+             <li><a href="R.html" > Réparation</a></li>
+              <li><a href="cc.html">contact</a></li>
+              <li class="search">
+              
+                <div>
+                  
+
+                  <div>
+                    <input type="text" id="search-input" placeholder="">
+                    <button id="search-btn">Rechercher</button>
+                  </div>
+                  
+                 
+                </div>
+                
+              </li>
+            </ul>
+          </nav>
+        
+         
+            
+           
+	</main>
+	<form>
+		<label for="nom">Nom de société :</label>
+		<input type="text" id="nom" name="nom" required>
+
+		<label for="email">Email :</label>
+
+		<input type="email" id="email" name="email" required>
+        <label for="email">type de machines:</label>
+        <select>
+
+            <option value="option1">Chariot élévateur </option>
+            <option value="option2">Transpalette
+            </option>
+            <option value="option3">Gerbeur :
+            </option>
+            
+          </select>
+          <label for="message">type de réparation:</label><br>
+          <input type="text" id="message" name="message"><br>
+          <input type="submit" value="Envoyer" onclick="envoyerMessage()">
+	
+		
+
+		
+	</form>
+</body>
+</html>
+

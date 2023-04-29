@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Page 2</h1>
+	<p>Voici le message que vous avez enregistré :</p>
+	<p id="message"></p>
+
+	<script>
+		var message = localStorage.getItem("message");
+		document.getElementById("message").innerHTML = message;
+	</script>
+</body>
+</html>

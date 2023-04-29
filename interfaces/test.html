@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+	<title>Page 1</title>
+	<style>
+		form {
+			margin: 50px auto;
+			width: 50%;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			box-shadow: 0 0 10px #ccc;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
-  <h1>bonjour</h1>  
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, dicta numquam! Alias, vitae sapiente adipisci autem vel omnis, ullam magnam animi maiores assumenda molestias quisquam, tenetur enim nesciunt recusandae praesentium!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo alias dolores ipsum labore natus ut ab corporis voluptatum possimus, veniam inventore obcaecati quo nesciunt in quia sequi amet asperiores repellendus?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda temporibus, earum nam consectetur odio asperiores, quia corrupti laboriosam cum enim nesciunt. Porro similique nobis delectus error facilis repudiandae, nostrum odio!
-    <img src="images/9.jpg" alt="">
-  </p>
+	<form>
+		
+		<label for="message">Entrez votre message:</label><br>
+		<input type="text" id="message" name="message"><br>
+		<input type="submit" value="Envoyer" onclick="envoyerMessage()">
+	</form>
+
+	<script>
+		function envoyerMessage() {
+			var message = document.getElementById("message").value;
+			localStorage.setItem("message", message);
+			window.location.href = "page2.html";
+		}
+	</script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page 2</title>
+	<style>
+		.container {
+			margin: 50px auto;
+			width: 50%;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			box-shadow: 0 0 10px #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Le message est:</h2>
+		<p id="message"></p>
+	</div>
+
+	<script>
+		var message = localStorage.getItem("message");
+		document.getElementById("message").innerHTML = message;
+		localStorage.removeItem("message");
+	</script>
+</body>
+</html>

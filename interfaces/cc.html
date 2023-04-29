@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	
+
+</head>
+<body>
+    <main>
+		<nav>
+        
+      <img src="images/Logo.png" style="width:150%; height:auto; max-width:85px;"/>
+            <ul>
+              <li><a href="#">Accueil </a></li>
+              <li><a href="page2.html">À propos</a></li>
+             <li><a href="produits.html" > produits</a></li>
+			 <li><a href="R.html" > Réparation</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="search">
+              
+                <div>
+                  
+
+					<div>
+					  <input type="text" id="search-input" placeholder="">
+					  <button id="search-btn">Rechercher</button>
+					</div>
+                  
+              </li>
+            </ul>
+          </nav>
+          <style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input, textarea {
+			padding: 10px;
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 1px 1px 2px grey;
+			width: 100%;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+    </style>
+
+</head>
+<h1>Formulaire de contact</h1>
+<form action="envoi.php" method="post">
+	<label for="nom">Nom :</label>
+	<input type="text" id="nom" name="nom" required>
+  
+	<label for="email">Email :</label>
+	<input type="email" id="email" name="email" required>
+  
+	<label for="message">Entrez votre message:</label><br>
+		<input type="text" id="message" name="message"><br>
+		<input type="submit" value="Envoyer" onclick="envoyerMessage()">
+	</form>
+
+	<script>
+		function envoyerMessage() {
+			var message = document.getElementById("message").value;
+			localStorage.setItem("message", message);
+			window.location.href = "t2.html";
+		}
+ 
+  
+
+    <footer>
+        <div class="container">
+          <p>Mon contenu de footer</p>
+        </div>
+      </footer>
+      
+	</script>
+</body>
+</html
